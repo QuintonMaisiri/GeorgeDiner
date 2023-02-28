@@ -149,9 +149,13 @@ footer{
   }
   .contact-card-container{
     background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
     height: 60vh;
+    width: 60vw;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    /* padding: 50px; */
+    padding: 50px;
     align-items: center;
   }
   .card-info{
@@ -165,16 +169,106 @@ footer{
   }
 
   #left-design{
-    display: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     width: 150px;
   }
   #right-design{
-    display:relative;
-    right:0;
+    position:absolute;
     bottom: 0;
+    right: 0;
     transform: rotate(180deg);
     width: 150px;
   }
 /* Contact us page end */
+
+/* Menu page */
+body{
+  background-image: none;
+  color: black;
+}
+.navbar-body{
+  background-color: black;
+}
+.menu{
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+}
+.menu > #right-design{
+  position: fixed;
+}
+
+#right-design-top{
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(90deg);
+  width: 150px;
+}
+#left-design-bottom{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  transform: rotate(270deg);
+  width: 150px;
+}
+h1{
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.menu-link-container{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.menu-link-container > ul{ 
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.menu-links{
+  color: black;
+  text-decoration: none;
+
+}
+
+section{
+  display: flex;
+}
+
+article{
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.menu-images{
+  width: 250px;
+  height: 300px;
+}
+h3{
+  color: black;
+  font-weight: lighter;
+  font-size: 13pt;
+}
+
+article>p{
+  color: black;
+  font-size: 10pt;
+}
+.script{
+  font-family: 'Dancing Script', cursive; 
+  position:absolute;
+  right: 50vw;
+
+}
