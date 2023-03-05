@@ -3,12 +3,14 @@
 *{
   font-family: 'Lora', serif;
   color: white;
+  font-size: 11pt;
 }
 body{
   background-image: url("/images/home-bg.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 .center-col{
   display: flex;
@@ -184,7 +186,7 @@ footer{
 /* Contact us page end */
 
 /* Menu page */
-body{
+#menu-body{
   background-image: none;
   color: black;
 }
@@ -214,7 +216,7 @@ body{
   transform: rotate(270deg);
   width: 150px;
 }
-h1{
+.menu>h1{
   color: black;
   text-align: center;
   text-transform: uppercase;
@@ -255,6 +257,7 @@ article{
 .menu-images{
   width: 250px;
   height: 300px;
+  margin-bottom: 10px;
 }
 h3{
   color: black;
@@ -268,7 +271,8 @@ article>p{
 }
 .script{
   font-family: 'Dancing Script', cursive; 
-  position:absolute;
-  right: 50vw;
+}
 
+.menu-heading{
+text-align: center;
 }
